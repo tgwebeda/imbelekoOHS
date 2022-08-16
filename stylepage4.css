@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: #616971;
+}
+
+.navbar-brand img {
+    height: 5rem;
+}
+p.lead {
+    color: #000;
+}
+.navbar {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    box-shadow: 0 .5rem 0 .5rem rgba(0, 0, 0, .1);
+    z-index: 1;
+}
+
+.nav-item {
+    padding: .5rem;
+}
+
+.nav-link {
+    color: #ffff!important;
+}
+
+.nav-link.active, 
+.nav-link:hover {
+    color: #06ecd9de!important;
+}
+
+/*==Column Section==*/
+.conb{
+    background-color: darkgray;
+    width: 100%;
+}
+/*==Ed of Column Section==*/
+/*=========Carousel===========*/
+#carousel {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
+
+.carousel-inner {
+    max-height: 38rem!important;
+}
+
+/*--Change carousel Transition speed---*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    transition: transform 1.2s ease;
+}
+/*---------Carousel Content---*/
+.carousel-caption {
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+}
+.bg-custom {
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 1rem;
+}
+.carousel-caption h1 {
+    font-size: 3.8rem;
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+}
+
+.border-primary {
+    border-top: .2rem solid #4981b3!important;
+}
+
+.carousel-caption h3 {
+    font-size: 2.2rem;
+    text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
+}
+/*===End of Carousel-Inner===*/
+
+.btn-lg {
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-width: medium;
+}
+
+.btn-danger {
+    background-color: #AC2615;
+    border: .05rem solid #AC2615;
+}
+
+.btn-primary {
+    background-color: #4981b3;
+    border: .1rem solid #4981b3;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #68a0d2!important;
+    border: .05 solid #68a0d2!important;
+}
+/*===Contact Us Page==*/
+.contact {
+    content: '';
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    width: 100%;
+    color: #ffff;
+    margin-top: 0px;
+    background: #000;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #fff;
+}
+.contact .content p {
+    font-weight: 300;
+    color: #fff;
+}
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact-container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-container .contactInfo .boxx {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contact-container .contactInfo .boxx .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contact-container .contactInfo .boxx .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contact-container .contactInfo .boxx .text h3 {
+    font-weight: 400;
+    color: #00bcd4;
+}
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 400;
+}
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s ease;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~span,
+.contactForm .inputBox textarea:focus ~span,
+.contactForm .inputBox textarea:valid ~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100%;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width: 991px)
+{
+    .contact {
+        padding: 50px;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-container .contactInfo {
+        margin-bottom: 40px;
+    }
+    .contact-container .contactInfo,
+    .contactForm {
+        width: 100%;
+    }
+}
+/*===End of Contact Us Page===*/
+/*=====Fixed Background IMG====*/
+.fixed-background {
+    padding: 10rem 0;
+}
+
+/*====Footer===================*/
+
+footer {
+    background-color: #34495e;
+    padding: 1rem 2rem 3rem;
+}
+
+footer img {
+    height: 4.5rem;
+    margin: 1.5rem auto;
+}
+
+footer p, footer a,
+.socket a {
+    color: white;
+    text-decoration: none;
+}
+ul.social {
+    list-style-type: none;
+    display: flex;
+    max-width: 16rem;
+    margin: 0 auto;
+    padding: 0;
+}
+ul.social li {
+    margin: 0 auto;
+}
+footer .svg-inline--fa {
+    font-size: 2.3rem;
+}
+footer .svg-inline--fa:hover {
+    color: #68a0d2;
+}
+
+/*========Media Queries========*/
+/*---Devices under 1199px (xl)---*/
+@media (max-width: 1199.98px) {
+ .carousel-caption h1 {
+     font-size: 2.8rem;
+ }
+ .carousel-caption h3 {
+     font-size: 1.8rem;
+ }
+}
+/*---Devices under 992px (md)---*/
+@media (max-width: 991.98px) {
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+    .btn-lg {
+        font-size: .95rem;
+    }
+}
+/*---Devices under 576px (md)---*/
+@media (max-width: 576.98px) {
+.carousel-caption h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        font-size: .80rem;
+    }
+}
+/*---Devices under 288px (sm)---*/
+@media (max-width: 288.98px) {
+    .carousel-caption h1 {
+            font-size: 1.8rem;
+        }
+    
+        .carousel-caption h3 {
+            font-size: .90rem;
+        }
+    
+        .btn-lg {
+            font-size: .50rem;
+        }
+}
+
+/*--Bootstrap Mobile Gutter fixes--*/
+.row, .container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+

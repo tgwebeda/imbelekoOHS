@@ -79,6 +79,9 @@ body {
 }
 
 /*===End of Image overlay===*/
+.border-top {
+    width: 75px;
+}
 /*===About Page===*/
 * {
     padding: 0;

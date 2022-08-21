@@ -313,22 +313,22 @@
             </div>
         </div>
         <div class="contactForm">
-            <form>
+            <form onsubmit="sendEmail(); reset(); return false">
                 <h2>Send Message</h2>
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input type="text" id="name" required="required">
                     <span>Full Name</span>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input type="text" id="email" required="required">
                     <span>Email</span>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="" required="required">
+                    <input type="text" id="phone" required="required">
                     <span>Phone Num</span>
                 </div>
                 <div class="inputBox">
-                    <textarea required="required"></textarea>
+                    <textarea id="message" required="required"></textarea>
                     <span>Type your Message...</span>
                 </div>
                 <div class="inputBox">

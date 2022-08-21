@@ -35,19 +35,19 @@ function isElementInViewport(element) {
         (top >= 0 && bottom <= height);
 }
 
-function SendEmail() {
+function sendEmail() {
         Email.send ({
-            Host : 'smtp.imbelekomp.co.za',
+            Host : "smtp.imbelekomp.co.za",
             username : "admin@imbelekomp.co.za",
             password : "Bv{>7ru:[$^8987",
             To : "Admin@imbelekomp.co.za",
             From : document.getElementById("email").value,
-            Subject : "New contact form Enquiry",
+            Subject : "New Project Enquiry",
             Body : "Name:" + document.getElementById("name").value
             + "<br> Email:" + document.getElementById("email").value
             + "<br> Phone Num:" + document.getElementById("phone").value
             + "<br> Message:" + document.getElementById("message").value
-        }).then (
+        }).then(
             message => alert("Message Sent Successfully")
     );
 }

@@ -40,7 +40,7 @@ function sendEmail() {
             Host : "smtp.imbelekomp.co.za",
             username : "admin@imbelekomp.co.za",
             password : "Bv{>7ru:[$^8987",
-            To : "Admin@imbelekomp.co.za",
+            To : "admin@imbelekomp.co.za",
             From : document.getElementById("email").value,
             Subject : "New Project Enquiry",
             Body : "Name:" + document.getElementById("name").value

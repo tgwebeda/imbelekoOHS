@@ -14,12 +14,13 @@
         <link rel="stylesheet" href="fontawesome-free-5.15.0-web/css/all.min.css">
         <!--End of testing-->
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#navbarResponsive">
         <!--Navigation-->
+      <div id="#home">
         <nav class="navbar badge-dark navbar-light navbar-expand-lg">
             <div class="container">
 
-                <a href="" class="navbar-brand"><img src="img/lego.png" alt="logo" title="Logo"></a>
+                <a href="index.html" class="navbar-brand"><img src="img/lego.png" alt="logo" title="Logo"></a>
 
                 <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="span navbar-toggler-icon"></span>
@@ -27,9 +28,9 @@
 
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-users" aria-hidden="true"></i> About Us</a></li>
-                        <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link"><i class="fa fa-users" aria-hidden="true"></i> About Us</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -95,7 +96,7 @@
             </a>
         </div>
        <!--End of Image carousel-->
-
+        </div>
         <!--Main Page Heading-->
         <div class="col-12 text-center mt-3">
             <h3 class="text-dark pt-2">Imbeleko OHS Consulting</h3>
@@ -224,7 +225,8 @@
                 </div>
             </div>
             <!--Start Fixed Background IMG-->
-<!--Start About Page--><div class="rows mt-4 pt-4">
+<div id="about"><!--Start About Page-->
+                <div class="rows mt-4 pt-4">
                             <div class="col-12 text-center mt-2">
                                 <h3 class="text-dark pt-2">About Imbeleko OHS</h3>
                                 <div class="border-top border-primary mx-auto my-3"></div>
@@ -277,7 +279,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </section><!--End of About Page-->
+                        </section>
+</div><!--End of About Page-->
+<div id="#contact">
 <!--Start of Contact us--><section class="contact">
     <div class="content">
         <h2 class="pt-2">Contact Imbeleko OHS Project</h2>
@@ -340,7 +344,7 @@
         </div>
     </div>
 </section><!--End of Contact Us-->
-
+</div>
         <!--Start Footer-->
         <footer class="socket text-light text-center pb-2">
             <div class="container-fluid padding">

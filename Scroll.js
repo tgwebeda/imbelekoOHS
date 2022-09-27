@@ -37,7 +37,7 @@ function isElementInViewport(element) {
 
 function sendEmail() {
         Email.send ({
-            Host : "smtp.imbelekomp.co.za",
+            Host : "smtp.mail.imbelekomp.co.za",
             username : "admin@imbelekomp.co.za",
             password : "Bv{>7ru:[$^8987",
             To : "admin@imbelekomp.co.za",

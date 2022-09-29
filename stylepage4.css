@@ -282,7 +282,7 @@ footer .svg-inline--fa:hover {
     color: #68a0d2;
 }
 
-/*========Media Queries===
+/*========Media Queries=====*/
 /*---Devices under 1199px (xl)---*/
 @media (max-width: 1199.98px) {
  .carousel-caption h1 {
@@ -331,7 +331,7 @@ footer .svg-inline--fa:hover {
         .btn-lg {
             font-size: .50rem;
         }
-}==*/
+}
 
 /*--Bootstrap Mobile Gutter fixes--*/
 .row, .container-fluid {

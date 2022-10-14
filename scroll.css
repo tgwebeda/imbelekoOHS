@@ -243,6 +243,55 @@ body {
     transform: translateX(0);
 }
 /*===End of Animation===*/
-/*===Start LINE anime===*/
+/*===Start BOX COLUMNS===*/
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
 
-/*===End LINE anime===*/
+.card {
+    width: 30%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+.card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background-color: #34495e;
+    color: #fff;
+}
+.card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    overflow: hidden;
+    background: linear-gradient(to right, #000, #34495e);
+}
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+/*==Box Columns Responsive Media Queries==*/
+@media screen and (max-width:1000px) {
+    .card {
+        width: 40%;
+    }
+}
+@media screen and (max-width:620px) {
+    .container {
+        width: 100%;
+    }
+    .heading {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .card {
+        width: 80%;
+    }
+}
+/*===End BOX COLUMNS anime===*/

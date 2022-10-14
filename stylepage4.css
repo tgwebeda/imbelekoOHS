@@ -5,6 +5,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #616971;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .navbar-brand img {
     height: 5rem;

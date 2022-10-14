@@ -251,7 +251,7 @@ p.lead {
 /*====Footer===================*/
 
 footer {
-    background-color: #34495e;
+    background: linear-gradient(to right, #000, #34495e);
     padding: 1rem 2rem 3rem;
 }
 

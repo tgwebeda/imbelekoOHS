@@ -121,7 +121,7 @@ p.lead {
     width: 100%;
     color: #ffff;
     margin-top: 0px;
-    background: #fff;
+    background: linear-gradient(to right, #000, #34495e);
 }
 .contact .content {
     max-width: 800px;

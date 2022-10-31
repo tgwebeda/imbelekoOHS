@@ -34,20 +34,3 @@ function isElementInViewport(element) {
         (bottom >= height && top <= height) ||
         (top >= 0 && bottom <= height);
 }
-
-function sendEmail() {
-        Email.send ({
-            Host : "smtp.gmail.com",
-            username : "thembisile39@gmail.com",
-            password : "Iatbicb#8011",
-            To : "admin@imbelekomp.co.za",
-            From : document.getElementById("email").value,
-            Subject : "New Project Enquiry",
-            Body : "Name:" + document.getElementById("name").value
-            + "<br> Email:" + document.getElementById("email").value
-            + "<br> Phone Num:" + document.getElementById("phone").value
-            + "<br> Message:" + document.getElementById("message").value
-        }).then(
-            message => alert("Message Sent Successfully")
-    );
-}

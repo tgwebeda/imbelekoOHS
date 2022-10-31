@@ -190,8 +190,13 @@ body {
 .about-item:hover hr {
     transition: all 950ms ease-in-out;
 }
+.pic {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /*===End of About Page===*/
-/*===Start of Animation===*/
+/*===Start of Animation
 .grid-container {
     display: grid;
     grid-gap: 3rem 1rem;
@@ -241,8 +246,7 @@ body {
 .card-anim2.visible {
     opacity: 1;
     transform: translateX(0);
-}
-/*===End of Animation===*/
+}End of Animation===*/
 /*===Start BOX COLUMNS===*/
 .row {
     display: flex;

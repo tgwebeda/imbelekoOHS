@@ -395,7 +395,24 @@
             <p>&copy; 2022 - Imbeleko OHS Consulting & Hygiene Projects</p>
         </footer>
         <!--End Footer-->
-                   
+      <script>
+          function sendEmail() {
+             Email.send ({
+                Host : "smtp.gmail.com",
+                username : "thembisile39@gmail.com",
+                password : "Iatbicb#8011",
+                To : "admin@imbelekomp.co.za",
+                From : document.getElementById("email").value,
+                Subject : "New Project Enquiry",
+                Body : "Name:" + document.getElementById("name").value
+                + "<br> Email:" + document.getElementById("email").value
+                + "<br> Phone Num:" + document.getElementById("phone").value
+                + "<br> Message:" + document.getElementById("message").value
+        }).then(
+            message => alert("Message Sent Successfully")
+    );
+}
+    </script>
         <!--Script Source Files-->
         <!--JQuery-->
         <script src="JQuery/jquery-3.4.1.min.js"></script>

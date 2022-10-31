@@ -37,9 +37,9 @@ function isElementInViewport(element) {
 
 function sendEmail() {
         Email.send ({
-            Host : "smtp.mail.imbelekomp.co.za",
-            username : "admin@imbelekomp.co.za",
-            password : "Bv{>7ru:[$^8987",
+            Host : "smtp.gmail.com",
+            username : "thembisile39@gmail.com",
+            password : "Iatbicb#8011",
             To : "admin@imbelekomp.co.za",
             From : document.getElementById("email").value,
             Subject : "New Project Enquiry",

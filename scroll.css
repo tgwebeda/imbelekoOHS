@@ -5,6 +5,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #616971;
 }
+
+a .anchor {
+   text-decoration: none;
+    color: #fff;
+}
 /*===Image overlay===*/
 
 .containerr {

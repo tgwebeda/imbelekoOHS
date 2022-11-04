@@ -123,6 +123,7 @@ body {
 
 .pic {
     width: 350px;
+    display: flex;
     height: 320px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -190,11 +191,6 @@ body {
 .about-item:hover hr {
     transition: all 950ms ease-in-out;
 }
-.pic {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 /*===End of About Page===*/
 /*===Start of Animation
 .grid-container {
